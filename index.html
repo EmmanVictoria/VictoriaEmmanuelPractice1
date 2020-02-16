@@ -1,49 +1,41 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Create a New Event</title>
-	<script src = "index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create a New Event</title>
+    <script src="index.js"></script>
 </head>
 <body>
-    <fieldset>
-    <form>
-        <label>Event Type: </label>
+         
+
+      <br>
+    <label>Event type: 
         <select name="type" id="event">
-            <option value ="">Choose one: </option>
-            <option value = "1">Marathon</option>
-            <option value = "2">Conferences</option>
-            <option value = "3">Trade Shows</option>
-            <option value ="4" >Wedding</option>
-            <option value = "5">Concert</option>
-            </select><br></br>
-
-        <label>Event Title: <input type="text" id="Title"></label><br></br>
-
+            <option>Marathon</option> 
+            <option>Conferences</option> 
+            <option>Trade Shows</option> 
+            <option>Wedding</option> 
+            <option>Concert</option> 
+        </select></label><br><br>
+        <label>Event Title: <input type="text" id="Title"></label><br></br>  
         <label>Event Dates: <input type="date" id = "date1"></label>
         <label>to <input type ="date" id ="2"></label><br></br>
 
         <label>Posting Date: <input type="date" id = "deliver"></label><br></br>
-        
-        <input type="checkbox" id="req" name="req"/>
-        <label for = "same">Is Registration Required?</label><br></br>
-
-        <input type="checkbox" id="famProg" name="associated"/>
-        <label for = "same">Is this event associated with any Family Programs?</label><br></br>
-
-        <input type="checkbox" id="email" name="completed"/>
-        <label for = "same">Upon Registration Completion, Are Users to Receive an Auto Generated Email?</label><br></br>
-
-        <input type="checkbox" id="contactperson" name="contact"/>
-        <label for = "same">Is There a Point of Contact?</label><br></br>
-
-        <input type="checkbox" id="command" name="hostcommand"/>
-        <label for = "same">Is There a Hosting Command Point of Contact?</label><br></br>
-
-        <input type = "submit" value = "Save" onclick="validate()"/>
+ 
+    <input type="checkbox" id="req" name="req"><label>Is Registration Required?</label><br><br>
+    <input type="checkbox" id="famProg" name="associated"><label>Is this event associated with any Family Programs?</label><br><br>
+     <input type="checkbox" id="email" name="completed"><labe>Upon Registration completion, Are Users to receive on auto generated Email?</labe><br><br>
+     <input type="checkbox" id="contactperson" name="contact"><label>Is there a point of Contact?</label><br><br>
+     <input type="checkbox"  id="command" name="hostcommand"><label>Is there a hosting command point of contact?</label><br><br>
+    
+     <input type = "submit" value = "Save" onclick="validate()"/>
         <input type = "button" value = "Cancel"/>
-    </form><br></br>
-</fieldset>
+</form> 
+</body>
 </body>
 </html>

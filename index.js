@@ -9,8 +9,9 @@ function validate(){
     if (type==""){
         alert("Please Enter Event Type")
         return false;
-    }else if (title==""){
-        alert("Please Enter Title")
+
+    }else if (post==""){
+        alert("Please Enter Posting Date")
         return false;
     }else if (date==""){
         alert("Please Enter Event Date")
@@ -18,8 +19,9 @@ function validate(){
     }else if (to==""){
         alert("Please Enter Event Date")
         return false;
-    }else if (post==""){
-        alert("Please Enter Posting Date")
+
+    }else if (title==""){
+        alert("Please Enter Title")
         return false;
     }else{
        alert("You have submitted your entry to the server")
