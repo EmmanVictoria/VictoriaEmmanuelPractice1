@@ -10,7 +10,7 @@
     <fieldset>
     <form>
         <label>Event Type: </label>
-        <select name="type" id="type">
+        <select name="type" id="event">
             <option value ="">Choose one: </option>
             <option value = "1">Marathon</option>
             <option value = "2">Conferences</option>
@@ -19,26 +19,26 @@
             <option value = "5">Concert</option>
             </select><br></br>
 
-        <label>Event Title: <input type="text" id="title"></label><br></br>
+        <label>Event Title: <input type="text" id="Title"></label><br></br>
 
-        <label>Event Dates: <input type="date" id = "date"></label>
-        <label>to <input type ="date" id ="to"></label><br></br>
+        <label>Event Dates: <input type="date" id = "date1"></label>
+        <label>to <input type ="date" id ="2"></label><br></br>
 
-        <label>Posting Date: <input type="date" id = "post"></label><br></br>
+        <label>Posting Date: <input type="date" id = "deliver"></label><br></br>
         
         <input type="checkbox" id="req" name="req"/>
         <label for = "same">Is Registration Required?</label><br></br>
 
-        <input type="checkbox" id="prog" name="prog"/>
+        <input type="checkbox" id="famProg" name="associated"/>
         <label for = "same">Is this event associated with any Family Programs?</label><br></br>
 
-        <input type="checkbox" id="comp" name="comp"/>
+        <input type="checkbox" id="email" name="completed"/>
         <label for = "same">Upon Registration Completion, Are Users to Receive an Auto Generated Email?</label><br></br>
 
-        <input type="checkbox" id="point" name="point"/>
+        <input type="checkbox" id="contactperson" name="contact"/>
         <label for = "same">Is There a Point of Contact?</label><br></br>
 
-        <input type="checkbox" id="host" name="host"/>
+        <input type="checkbox" id="command" name="hostcommand"/>
         <label for = "same">Is There a Hosting Command Point of Contact?</label><br></br>
 
         <input type = "submit" value = "Save" onclick="validate()"/>

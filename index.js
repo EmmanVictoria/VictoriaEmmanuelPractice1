@@ -1,9 +1,9 @@
 function validate(){
-    var type= document.getElementById('type').value;
-    var title= document.getElementById('title').value;
-    var date=document.getElementById('date').value;
-    var to=document.getElementById('to').value;
-    var post=document.getElementById('post').value;
+    var type= document.getElementById('event').value;
+    var title= document.getElementById('Title').value;
+    var date=document.getElementById('date1').value;
+    var to=document.getElementById('2').value;
+    var post=document.getElementById('deliver').value;
     
 
     if (type==""){
@@ -22,7 +22,7 @@ function validate(){
         alert("Please Enter Posting Date")
         return false;
     }else{
-       alert("You have successfully submitted your entry!")
+       alert("You have submitted your entry to the server")
         return true;
     }
 }
