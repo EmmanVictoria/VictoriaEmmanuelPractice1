@@ -1,18 +1,28 @@
-function alertUser(){
-    if (document.getElementById("ET").value=="")
-    {
-        alert("Missing Event Title. Please write again.");
-    }
-    else if (document.getElementById("ED1").value=="")
-    {
-        alert("Missing the first Event Date. Please write again.");
-    }
-    else if (document.getElementById("ED2").value=="")
-    {
-        alert("Missing the second Event Date. Please write again.");
-    }
-    else if (document.getElementById("PD").value=="")
-    {
-        alert("Missing Posting Date. Please write again.");
+function validate(){
+    var type= document.getElementById('type').value;
+    var title= document.getElementById('title').value;
+    var date=document.getElementById('date').value;
+    var to=document.getElementById('to').value;
+    var post=document.getElementById('post').value;
+    
+
+    if (type==""){
+        alert("Please Enter Event Type")
+        return false;
+    }else if (title==""){
+        alert("Please Enter Title")
+        return false;
+    }else if (date==""){
+        alert("Please Enter Event Date")
+        return false;
+    }else if (to==""){
+        alert("Please Enter Event Date")
+        return false;
+    }else if (post==""){
+        alert("Please Enter Posting Date")
+        return false;
+    }else{
+       alert("You have successfully submitted your entry!")
+        return true;
     }
 }
